@@ -1,0 +1,53 @@
+/**
+ * _header.scss
+ */
+
+/*
+Header
+ */
+.site-header {
+  padding: 0.5rem 0;
+  border-bottom: 2px solid $link-color;
+
+  a {
+    @include link-color(black, $link-color);
+  }
+
+  @include break-sm {
+    padding: 0.75rem 0;
+  }  
+}
+
+/*
+Nav: Main
+ */
+.main-navigation {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    padding: 0.25rem;
+    font-size: 0.9375rem;
+  }
+
+  &.toggled .nav-menu {
+    display: block !important;
+  }
+
+  @include break-sm {
+    a {
+      padding: 0.625rem;
+      text-transform: uppercase;
+    }
+  }
+  @include break-md {
+    a {
+      font-size: 0.875rem;
+    }
+  }  
+}

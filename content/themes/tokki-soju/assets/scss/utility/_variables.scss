@@ -1,0 +1,66 @@
+/**
+ * _variables.scss
+ */
+
+/*
+Typography
+ */
+/* Variables */
+$sans-serif: 'Roboto', Helvetica, sans-serif;
+$serif: Georgia, serif;
+
+/* Definitions */
+$body-font: $sans-serif;
+$heading-font: $sans-serif;
+
+/* Sizes */
+$font-size-xs: 14px !default;
+$font-size-sm: 15px !default;
+$font-size-lg: 16px !default;
+
+/*
+Colors
+ */
+// brand color map function
+@function brand-color($key: 'blue') {
+  @return map-get($brand-colors, $key);
+}
+
+/* Variables */
+$brand-colors: (
+  'blue': #0077CC,
+  'cream': #EDEFEA,
+  'gray-dark': #333333,
+  'gray-light': #CCCCCC,
+  'red': #CC0000
+);
+
+/* Definitions */
+$text-color: brand-color('gray-dark');
+$link-color: brand-color('red');
+
+$heading-color: $text-color;
+$button-color: $link-color;
+
+$border-color: brand-color('gray-light');
+
+/* Social */
+$facebook: #415696;
+$twitter: #4FA6DD;
+
+/*
+Breakpoints
+ */
+$break-xs: 35rem;
+$break-sm: 48rem;
+$break-md: 62rem;
+$break-lg: 75rem;
+$break-xl: 90rem;
+
+// grid gutter width
+$gutter-width: 1.25rem !default;
+
+/*
+Margins
+ */
+$margin-p: 1.3rem;
