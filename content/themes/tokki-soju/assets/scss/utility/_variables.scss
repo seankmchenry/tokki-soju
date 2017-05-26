@@ -7,11 +7,13 @@ Typography
  */
 /* Variables */
 $sans-serif: 'Roboto', Helvetica, sans-serif;
+$sans-serif--alt: 'Open Sans', Helvetica, sans-serif;
 $serif: Georgia, serif;
 
 /* Definitions */
 $body-font: $sans-serif;
 $heading-font: $sans-serif;
+$nav-font: $sans-serif--alt;
 
 /* Sizes */
 $font-size-xs: 14px !default;
@@ -43,6 +45,8 @@ $heading-color: $text-color;
 $button-color: $link-color;
 
 $border-color: brand-color('gray-light');
+
+$header-bg-color: lighten($border-color, 18%);
 
 /* Social */
 $facebook: #415696;

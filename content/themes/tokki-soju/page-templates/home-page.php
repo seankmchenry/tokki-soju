@@ -9,34 +9,31 @@
 
 get_header(); ?>
 
-	<div id="content" class="site-content p0">
+  <div id="content" class="site-content p0">
 
-		<div id="primary" class="content-area">
-			<main id="main" class="site-main" role="main">
+    <div id="primary" class="content-area">
+      <main id="main" class="site-main" role="main">
 
-				<?php
-				while ( have_posts() ) : the_post(); ?>
+        <?php
+        while ( have_posts() ) : the_post(); ?>
 
-					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-						<div class="entry-content">
-							<?php
-								the_content();
+          <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <div class="entry-content">
+              <?php
+              
+              /* Sections */
 
-								wp_link_pages( array(
-									'before' => '<div class="page-links">' . esc_html__( 'Pages:', '_s' ),
-									'after'  => '</div>',
-								) );
-							?>
-						</div><!-- .entry-content -->
-					</article><!-- #post-## -->
+              ?>
+            </div><!-- .entry-content -->
+          </article><!-- #post-## -->
 
-				<?php endwhile; // End of the loop.
-				?>
+        <?php endwhile; // End of the loop.
+        ?>
 
-			</main><!-- #main -->
-		</div><!-- #primary -->
+      </main><!-- #main -->
+    </div><!-- #primary -->
 
-	</div><!-- #content -->
+  </div><!-- #content -->
 
 <?php
 get_footer();
