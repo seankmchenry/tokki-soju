@@ -18,10 +18,22 @@ $location_options = array(
   'public' => true,
   'has_archive' => false,
   'rewrite' => false,
-  'supports' => array( 'editor', 'revisions', 'thumbnail', 'title' ),
+  'supports' => array( 'editor', 'revisions', 'title' ),
   'menu_icon' => 'dashicons-location'
 );
 $location = new PostType( 'location', $location_options );
+
+/**
+ * CPT: Recipes
+ */
+$recipe_options = array(
+  'public' => true,
+  'has_archive' => false,
+  'rewrite' => false,
+  'supports' => array( 'editor', 'revisions', 'title' ),
+  'menu_icon' => 'dashicons-carrot'
+);
+$recipe = new PostType( 'recipe', $recipe_options );
 
 /**
  * Featured image column

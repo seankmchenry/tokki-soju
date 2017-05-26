@@ -107,3 +107,12 @@ function ts_get_image_alt( $post_id ) {
   $alt = get_post_meta( $thumb_id, '_wp_attachment_image_alt', true );
   return $alt;
 }
+
+/**
+ * Google Maps API key
+ */
+function ts_google_maps_key( $api ){
+  $api['key'] = 'AIzaSyDWfuWb_yQrjXk10m093AoCD3hFjFF5mJ4';
+  return $api;
+}
+add_filter( 'acf/fields/google_map/api', 'ts_google_maps_key' );

@@ -12,6 +12,12 @@ function ts_register_required_plugins() {
    */
   $plugins = array(
     array(
+      'name' => 'ACF to REST API',
+      'slug' => 'acf-to-rest-api',
+      'required' => true,
+      'force_activation' => true
+    ),    
+    array(
       'name' => 'Advanced Custom Fields Pro',
       'slug' => 'advanced-custom-fields-pro',
       'source' => 'https://github.com/ecmdesign/advanced-custom-fields-pro/archive/master.zip',
