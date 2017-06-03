@@ -38,7 +38,7 @@
                 <?php
                 /* Section Headline */
                 if ( get_sub_field( 'section_headline' ) ) { ?>
-                  <h3 class="section-headline about-headline about-section__headline h1 mt0 mb3"><?php the_sub_field( 'section_headline' ); ?></h3>
+                  <h3 class="section-headline about-headline about-section__headline mt0 mb3"><?php the_sub_field( 'section_headline' ); ?></h3>
                 <?php }
 
                 /* Section Text */

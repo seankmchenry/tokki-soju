@@ -17,7 +17,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <!-- Web fonts -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:400,400i,500,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700|Roboto:400,500" rel="stylesheet">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,8 +46,8 @@
               if ( get_field( 'brand_logo', 'option' ) ) {
                 $logo = get_field( 'brand_logo', 'option' );
                 ?>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-                  <img class="site-logo site-title__logo inline-block" src="<?php echo $logo['url']; ?>" alt="<?php bloginfo( 'name' ); ?>">
+                <a class="inline-block" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                  <img class="site-logo site-title__logo block" src="<?php echo $logo['url']; ?>" alt="<?php bloginfo( 'name' ); ?>">
                 </a>
               <?php } else { ?>
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>

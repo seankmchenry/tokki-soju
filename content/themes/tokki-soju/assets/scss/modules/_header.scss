@@ -14,17 +14,19 @@ Header
   z-index: 100;
 
   a {
-    font-family: $nav-font;
     font-weight: $bold-font-weight;
     @include link-color(black, $link-color);
   }
-
-  @include break-sm {
-    padding: 0.75rem 0;
-  }
 }
 .site-logo {
-  width: 125px;
+  width: 85px;
+
+  @include break-sm {
+    width: 100px;
+  }
+  @include break-md {
+    width: 125px;
+  }
 }
 
 /*
@@ -49,6 +51,9 @@ Nav: Main
   }
 
   @include break-sm {
+    li {
+      margin: 0.25rem 0;
+    }
     a {
       padding: 0.625rem;
       text-transform: uppercase;

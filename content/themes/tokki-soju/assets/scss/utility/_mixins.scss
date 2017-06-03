@@ -72,6 +72,15 @@ Font Smoothing
 }
 
 /*
+Headlines
+ */
+@mixin fancy-headline($stroke: $text-color, $fill: white) {
+  -webkit-text-fill-color: $fill;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: $stroke;
+}
+
+/*
 Hover Effects
  */
 @mixin hover-lighten($opacity: 0.85) {

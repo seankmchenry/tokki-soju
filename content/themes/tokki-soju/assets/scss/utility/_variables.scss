@@ -6,24 +6,25 @@
 Typography
  */
 /* Variables */
-$sans-serif: 'Roboto', Helvetica, sans-serif;
-$sans-serif--alt: 'Open Sans', Helvetica, sans-serif;
+$sans-serif: 'Open Sans', Helvetica, sans-serif;
+$sans-serif--alt: 'Roboto', Helvetica, sans-serif;
 $serif: Georgia, serif;
 
 /* Definitions */
 $body-font: $sans-serif;
-$heading-font: $sans-serif;
-$nav-font: $sans-serif--alt;
+$heading-font: $sans-serif--alt;
 
 /* Sizes */
 $xs-font-size: 14px !default;
 $sm-font-size: 15px !default;
 $lg-font-size: 16px !default;
 
-$btn-font-size: 0.9375rem;
+$btn-font-size: 0.875rem;
+
+$xl-font-size: 3.5rem;
 
 /* Weights */
-$bold-font-weight: 700;
+$bold-font-weight: 600;
 $normal-font-weight: 400;
 
 /*

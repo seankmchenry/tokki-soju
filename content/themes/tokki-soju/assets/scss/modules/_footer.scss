@@ -5,7 +5,19 @@
 /*
 Footer
  */
-.site-footer {}
+.site-footer {
+  font-size: $btn-font-size;
+}
+
+/*
+Footer: Top
+ */
+.site-footer__top {}
+
+/*
+Footer: Bottom
+ */
+.site-footer__bottom {}
 
 /*
 Sticky Footer
