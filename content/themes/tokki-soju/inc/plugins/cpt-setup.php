@@ -19,7 +19,8 @@ $location_options = array(
   'has_archive' => false,
   'rewrite' => false,
   'supports' => array( 'editor', 'revisions', 'title' ),
-  'menu_icon' => 'dashicons-location'
+  'menu_icon' => 'dashicons-location',
+  'show_in_rest' => true
 );
 $location = new PostType( 'location', $location_options );
 

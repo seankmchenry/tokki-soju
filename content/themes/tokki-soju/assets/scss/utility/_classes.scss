@@ -11,18 +11,18 @@ Colors
 .text-color { color: $text-color; }
 
 /*
-Font Weights
- */
-.fw300 { font-weight: 300 !important; }
-.fw400 { font-weight: 400 !important; }
-.fw600 { font-weight: 600 !important; }
-.fw700 { font-weight: 700 !important; }
-
-/*
 Fonts
  */
 .body-font { font-family: $body-font; }
 .heading-font { font-family: $heading-font; }
+
+/*
+Font Weights
+ */
+.fw300 { font-weight: 300 !important; }
+.fw500 { font-weight: 500 !important; }
+.fw600 { font-weight: 600 !important; }
+.fw700 { font-weight: 700 !important; }
 
 /*
 Media Queries

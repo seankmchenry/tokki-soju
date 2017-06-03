@@ -17,7 +17,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <!-- Web fonts -->
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:400,400i,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:400,400i,500,700" rel="stylesheet">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,7 +38,7 @@
     <div class="container">
       <div class="row middle-xs">
 
-        <div class="col-xs-8 col-md-3">
+        <div class="col-xs-8 col-sm-5 col-md-3">
           <!-- Branding -->
           <div class="site-branding">
             <h1 class="site-title m0">
@@ -56,7 +56,7 @@
           </div><!-- .site-branding -->
         </div>
 
-        <div class="col-xs-4 col-md-9">
+        <div class="col-xs-4 col-sm-7 col-md-9">
           <!-- Nav -->
           <nav id="main-nav" class="main-navigation main-nav right-align" role="navigation">
             <button class="menu-toggle btn btn-primary visible-xs" aria-controls="main-nav" aria-expanded="false"><?php esc_html_e( 'Menu', '_s' ); ?></button>

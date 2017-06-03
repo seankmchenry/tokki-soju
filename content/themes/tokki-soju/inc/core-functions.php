@@ -85,6 +85,8 @@ function _ts_custom_image_sizes() {
 
   // hero size
   add_image_size( 'hero', 1600, 640, true );
+  add_image_size( 'tall', 400, 800, false );
+  add_image_size( 'logo', 300, 150, false );
 }
 add_action( 'init', '_ts_custom_image_sizes' );
 
@@ -114,3 +116,37 @@ function ts_google_maps_key( $api ){
   return $api;
 }
 add_filter( 'acf/fields/google_map/api', 'ts_google_maps_key' );
+
+/**
+ * Section title ID
+ */
+function ts_get_section_id() {
+  $title = get_sub_field( 'section_title' );
+  $id = strtolower( str_replace( ' ', '-', $title ) );
+  return $id;
+}
+
+/**
+ * Split ACF Google Map address field
+ */
+function ts_get_map_address( $address ) {
+  $address = str_replace( ', United States', '', $address );
+  $address = explode( ",", $address, 2 );
+  return $address;
+}
+
+/**
+ * Get tel: links from phone numbers
+ */
+function ts_get_tel_link( $phone ) {
+  // remove non-numeric character
+  $phone = preg_replace( "/[^0-9]/", "", $phone );
+  // check string length
+  if ( strlen( $phone ) === 10 ) {
+    $phone = '+1' . $phone;
+  }
+  // add tel: prefix
+  $phone = "tel:" . $phone;
+  // return the link
+  return $phone;
+}

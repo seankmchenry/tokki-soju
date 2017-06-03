@@ -20,9 +20,51 @@ get_header(); ?>
           <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
             <div class="entry-content">
               <?php
-              
-              /* Sections */
 
+              /* Sections */
+              if ( have_rows( 'home_sections' ) ) :
+
+                // loop through sections
+                while ( have_rows( 'home_sections' ) ) : the_row();
+
+                  /* Map */
+                  if ( get_row_layout() == 'map_section' ) {
+                    get_template_part( 'templates/home/map', 'section' );
+                  }
+
+                  /* Large Image */
+                  elseif ( get_row_layout() == 'large_image_section' ) {
+                    get_template_part( 'templates/home/large_image', 'section' );
+                  }
+
+                  /* Recipe */
+                  elseif ( get_row_layout() == 'recipe_section' ) {
+                    get_template_part( 'templates/home/recipe', 'section' );
+                  }
+
+                  /* Press */
+                  elseif ( get_row_layout() == 'press_section' ) {
+                    get_template_part( 'templates/home/press', 'section' );
+                  }
+
+                  /* About */
+                  elseif ( get_row_layout() == 'about_section' ) {
+                    get_template_part( 'templates/home/about', 'section' );
+                  }
+
+                  /* Gallery */
+                  elseif ( get_row_layout() == 'gallery_section' ) {
+                    get_template_part( 'templates/home/gallery', 'section' );
+                  }
+
+                  /* Video */
+                  elseif ( get_row_layout() == 'video_section' ) {
+                    get_template_part( 'templates/home/video', 'section' );
+                  }
+
+                endwhile;
+
+              endif;
               ?>
             </div><!-- .entry-content -->
           </article><!-- #post-## -->

@@ -11,19 +11,19 @@ $small: 0.833em;
 
 // type styles
 html {
-  font-size: $font-size-xs;
+  font-size: $xs-font-size;
 
   @include break-sm {
-    font-size: $font-size-sm;
+    font-size: $sm-font-size;
   }
   @include break-lg {
-    font-size: $font-size-lg;
+    font-size: $lg-font-size;
   }
 }
 
 body {
   font-family: $body-font;
-  font-weight: 400;
+  font-weight: $normal-font-weight;
   line-height: 1.45;
   color: $text-color;
 }

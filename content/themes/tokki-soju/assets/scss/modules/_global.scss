@@ -20,7 +20,7 @@ body {
 }
 
 /*
-Links
+Elements
  */
 a {
   text-decoration: none;
@@ -34,6 +34,9 @@ a {
   &:active {
     outline: 0;
   }
+}
+b, strong {
+  font-weight: $bold-font-weight;
 }
 
 /*

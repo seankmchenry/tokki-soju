@@ -8,8 +8,8 @@
 /* Basscss Forms */
 
 label, .label {
-  font-size: .9375rem; // .875rem
-  font-weight: 600;
+  font-size: $btn-font-size;
+  font-weight: $bold-font-weight;
   display: block;
   margin-bottom: .5rem;
 }
