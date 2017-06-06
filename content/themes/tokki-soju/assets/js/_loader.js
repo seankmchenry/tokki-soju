@@ -17,32 +17,23 @@
 var Roots = {
   /* Common */
   common: {
-    init: function() {}
-  },
-
-  /* Home */
-  home: {
     init: function() {
-      /* Smooth Scroll */
-      // https://goo.gl/Qb9zjZ
-      $('.main-navigation a').on('click', function(event) {
-        if (this.hash !== "") {
-          event.preventDefault();
-          var hash = this.hash;
-
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function() {
-            window.location.hash = hash;
-          });
-        }
-      });
+      /* Gumshoe */
+      gumshoe.init();
 
       /* Headroom */
       var myHeader = document.querySelector(".site-header");
       var headroom = new Headroom(myHeader);
       headroom.init();
+
+      /* Smooth Scroll */
+      smoothScroll.init();
     }
+  },
+
+  /* Home */
+  home: {
+    init: function() {}
   }
 };
 

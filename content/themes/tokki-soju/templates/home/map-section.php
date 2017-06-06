@@ -9,8 +9,8 @@
 <section id="<?php echo ts_get_section_id(); ?>" class="home-section map-section home-section--map">
 
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
+    <div class="row center-xs">
+      <div class="col-xs-12 col-md-10">
 
         <!-- Inner -->
         <div class="section-inner map-inner map-section__inner">
@@ -36,7 +36,7 @@
           if ( $my_query->have_posts() ) : ?>
 
             <div class="section-locs map-locs map-section__locs">
-              <div class="section-map map-section__map acf-map rounded mx-auto">
+              <div class="section-map map-section__map acf-map rounded mx-auto left-align">
 
                 <?php // loop through posts
                 while ( $my_query->have_posts() ) : $my_query->the_post();

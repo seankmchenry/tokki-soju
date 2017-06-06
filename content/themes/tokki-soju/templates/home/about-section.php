@@ -9,8 +9,8 @@
 <section id="<?php echo ts_get_section_id(); ?>" class="home-section about-section home-section--about">
 
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
+    <div class="row center-xs">
+      <div class="col-xs-12 col-lg-10">
 
         <!-- Inner -->
         <div class="section-inner about-inner about-section__inner">
@@ -28,13 +28,13 @@
               ?>
               <div class="col-xs-12 col-md-6">
                 <a href="<?php echo $photo['url']; ?>" target="_blank">
-                  <img class="section-photo about-photo about-section__photo block hover-lighten" src="<?php echo $photo['sizes']['tall']; ?>" alt="<?php echo $photo['alt']; ?>">
+                  <img class="section-photo about-photo about-section__photo block mb3 hover-lighten" src="<?php echo $photo['sizes']['tall']; ?>" alt="<?php echo $photo['alt']; ?>">
                 </a>
               </div>
             <?php }
 
             if ( get_sub_field( 'section_headline' ) && get_sub_field( 'section_headline' ) ) { ?>
-              <div class="col-xs-12 col-md-6">
+              <div class="col-xs-12 col-md-6 left-align">
                 <?php
                 /* Section Headline */
                 if ( get_sub_field( 'section_headline' ) ) { ?>

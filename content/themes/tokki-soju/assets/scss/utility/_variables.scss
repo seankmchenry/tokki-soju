@@ -55,6 +55,8 @@ $button-color: $link-color;
 $border-color: brand-color('gray-light');
 
 $header-bg-color: lighten($border-color, 18%);
+$footer-bg-color: darken($header-bg-color, 10%);
+$footer-text-color: darken($footer-bg-color, 40%);
 
 $money-color: brand-color('green');
 

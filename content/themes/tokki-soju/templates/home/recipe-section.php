@@ -9,8 +9,8 @@
 <section id="<?php echo ts_get_section_id(); ?>" class="home-section recipe-section home-section--recipe">
 
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
+    <div class="row center-xs">
+      <div class="col-xs-12 col-lg-10">
 
         <!-- Inner -->
         <div class="section-inner recipe-inner recipe-section__inner">
@@ -34,7 +34,7 @@
                 foreach ( $posts as $post ) {
                   setup_postdata( $post ); ?>
 
-                  <div class="col-xs-12 col-sm-6 col-md-4">
+                  <div class="col-xs-6 col-md-4">
                     <div class="section-item recipe-item recipe-section__item mb3">
                       <?php
                       /* Photo */

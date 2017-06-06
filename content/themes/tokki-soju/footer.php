@@ -17,10 +17,8 @@
 
     <!-- Bottom -->
     <div class="footer-bottom site-footer__bottom py1">
-      <div class="footer-info site-footer__info center">
-        <a href="<?php echo esc_url( __( 'https://wordpress.org/', '_s' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', '_s' ), 'WordPress' ); ?></a>
-        <span class="sep"> | </span>
-        <?php printf( esc_html__( 'Theme: %1$s by %2$s.', '_s' ), '_s', '<a href="https://automattic.com/" rel="designer">Automattic</a>' ); ?>
+      <div class="footer-credits site-footer__credits center">
+        <span>&copy; <?php echo date( 'Y' ); ?>, <?php bloginfo( 'name' ); ?></span>
       </div><!-- .site-info -->
     </div>
   </footer><!-- #colophon -->

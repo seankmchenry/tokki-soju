@@ -150,3 +150,11 @@ function ts_get_tel_link( $phone ) {
   // return the link
   return $phone;
 }
+
+/**
+ * Add wp_nav_menu link class
+ */
+function ts_add_link_class( $ulclass ) {
+  return preg_replace( '/<a /', '<a data-scroll ', $ulclass );
+}
+add_filter( 'wp_nav_menu', 'ts_add_link_class' );

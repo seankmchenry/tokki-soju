@@ -76,8 +76,31 @@ Home: Map
 }
 
 /*
+Home: Press
+ */
+.press-item__logo {
+  max-height: 125px;
+  width: auto;
+
+  @include break-xs {
+    max-width: 225px;
+  }
+  @include break-sm {
+    max-width: 175px;
+  }
+  @include break-lg {
+    max-width: 200px;
+  }
+}
+
+/*
 Home: About
  */
+.about-section__photo {
+  @include break-lg {
+    margin: 0 auto;
+  }
+}
 .about-section__headline {
   font-size: $xl-font-size;
   @include fancy-headline;

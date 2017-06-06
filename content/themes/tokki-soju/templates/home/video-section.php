@@ -9,8 +9,8 @@
 <section id="<?php echo ts_get_section_id(); ?>" class="home-section video-section home-section--video">
 
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
+    <div class="row center-xs">
+      <div class="col-xs-12 col-md-10">
 
         <!-- Inner -->
         <div class="section-inner video-inner video-section__inner">

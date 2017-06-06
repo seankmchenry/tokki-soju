@@ -9,8 +9,8 @@
 <section id="<?php echo ts_get_section_id(); ?>" class="home-section press-section home-section--press">
 
   <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
+    <div class="row center-xs">
+      <div class="col-xs-12 col-lg-11">
 
         <!-- Inner -->
         <div class="section-inner press-inner press-section__inner">
@@ -33,7 +33,7 @@
                   $link = get_sub_field( 'press_url' );
                   ?>
                   <div class="col-xs-6 col-sm-4 col-md-3">
-                    <div class="section-item press-item press-section__item">
+                    <div class="section-item press-item press-section__item mb3">
                       <?php // check for link
                       if ( $link ) { ?>
                         <a href="<?php echo $link; ?>" target="_blank">
