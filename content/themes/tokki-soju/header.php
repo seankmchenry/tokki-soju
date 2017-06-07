@@ -33,7 +33,7 @@
 <div id="page" class="site">
   <a class="skip-link screen-reader-text hide" href="#content"><?php esc_html_e( 'Skip to content', '_s' ); ?></a>
 
-  <header id="masthead" class="site-header" role="banner" data-gumshoe-header>
+  <header id="masthead" class="site-header" role="banner">
 
     <div class="container">
       <div class="row middle-xs">
@@ -58,7 +58,7 @@
 
         <div class="col-xs-4 col-sm-7 col-md-9">
           <!-- Nav -->
-          <nav id="main-nav" class="main-navigation main-nav right-align" role="navigation">
+          <nav id="main-nav" class="main-navigation main-nav right-align" role="navigation" data-gumshoe-header>
             <button class="menu-toggle icon-menu btn btn-primary visible-xs" aria-controls="main-nav" aria-expanded="false"><span title="Menu"></span></button>
             <?php wp_nav_menu( array( 'theme_location' => 'main-nav', 'items_wrap' => '<ul id="main-nav-menu" class="nav-menu hidden-xs" data-gumshoe>%3$s</ul>' ) ); ?>
           </nav><!-- #main-nav -->

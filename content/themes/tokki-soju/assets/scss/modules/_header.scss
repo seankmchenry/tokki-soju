@@ -41,6 +41,13 @@ Header
 }
 
 /* Logo */
+.site-title {
+  height: 42.66px;
+
+  @include break-sm {
+    height: auto;
+  }
+}
 .site-logo {
   width: 75px;
 
