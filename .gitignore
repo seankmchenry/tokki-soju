@@ -14,7 +14,6 @@ packages/
 debug.log
 npm-debug.log
 
-
 # WordPress folders
 wp/
 content/plugins/*
@@ -32,3 +31,6 @@ main.min.css
 main.min.css.map
 main.js
 main.min.js
+
+# VS Code
+.vscode/
