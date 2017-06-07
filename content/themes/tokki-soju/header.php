@@ -33,7 +33,7 @@
 <div id="page" class="site">
   <a class="skip-link screen-reader-text hide" href="#content"><?php esc_html_e( 'Skip to content', '_s' ); ?></a>
 
-  <header id="masthead" class="site-header" role="banner">
+  <header id="masthead" class="site-header" role="banner" data-gumshoe-header>
 
     <div class="container">
       <div class="row middle-xs">
