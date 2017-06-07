@@ -13,16 +13,17 @@
    *  @return  n/a
    */
   function new_map($el) {
-    // var
+    // set marker variable
     var $markers = $el.find('.marker');
 
-    // vars
+    // map options
     var args = {
       zoom: 15,
       center: new google.maps.LatLng(0, 0),
       mapTypeId: 'terrain',
       scrollwheel: false,
-      draggable: false
+      draggable: false,
+      styles: [{"featureType":"administrative","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape","elementType":"all","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","elementType":"all","stylers":[{"saturation":-100},{"lightness":"50"},{"visibility":"simplified"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":"-100"}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"all","stylers":[{"lightness":"30"}]},{"featureType":"road.local","elementType":"all","stylers":[{"lightness":"40"}]},{"featureType":"transit","elementType":"all","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]},{"featureType":"water","elementType":"labels","stylers":[{"lightness":-25},{"saturation":-100}]}]
     };
 
     // create map
@@ -36,10 +37,19 @@
       add_marker($(this), map);
     });
 
+    google.maps.event.addListener(map, 'click', function() {
+      infowindow.close();
+    });
+
+    // add class when map is loaded
+    google.maps.event.addListenerOnce(map, 'idle', function() {
+      $('.acf-map').addClass('loaded');
+    });
+
     // center map
     center_map(map);
 
-    // return
+    // return the map
     return map;
   }
 
@@ -71,6 +81,7 @@
 
     // if marker contains HTML, add it to an infoWindow
     if ($marker.html()) {
+
       // create info window
       var infowindow = new google.maps.InfoWindow({
         content: $marker.html()
@@ -78,6 +89,9 @@
 
       // show info window when marker is clicked
       google.maps.event.addListener(marker, 'click', function() {
+        if (infowindow) {
+          infowindow.close();
+        }
         infowindow.open(map, marker);
       });
     }

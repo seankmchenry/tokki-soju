@@ -45,7 +45,7 @@ Home: Global
 /*
 Home: Map
  */
-.acf-map {
+.map-section__map {
   width: 100%;
   height: 350px;
   border: 1px solid $border-color;
@@ -54,8 +54,12 @@ Home: Map
   img {
     max-width: inherit;
   }
+
+  // hide until map is loaded
+  h4, span {
+    display: none;
+  }
   span {
-    display: block;
     font-size: $btn-font-size;
     font-weight: 400;
     line-height: 1.3 !important;
@@ -72,6 +76,13 @@ Home: Map
   }
   @include break-lg {
     height: 500px;
+  }
+
+  // display when map is loaded
+  &.loaded {
+    h4, span {
+      display: block;
+    }
   }
 }
 

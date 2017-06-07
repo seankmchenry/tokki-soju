@@ -12,6 +12,14 @@ function ts_register_required_plugins() {
    */
   $plugins = array(
     array(
+      'name' => 'ACF-PHP-Recovery',
+      'slug' => 'ACF-PHP-Recovery',
+      'source' => 'https://github.com/BeAPI/ACF-PHP-Recovery/archive/master.zip',
+      'required' => true,
+      'force_activation' => true,
+      'external_url' => 'https://github.com/BeAPI/ACF-PHP-Recovery'
+    ),
+    array(
       'name' => 'Advanced Custom Fields Pro',
       'slug' => 'advanced-custom-fields-pro',
       'source' => 'https://github.com/ecmdesign/advanced-custom-fields-pro/archive/master.zip',
