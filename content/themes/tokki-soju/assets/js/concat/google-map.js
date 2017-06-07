@@ -37,10 +37,6 @@
       add_marker($(this), map);
     });
 
-    google.maps.event.addListener(map, 'click', function() {
-      infowindow.close();
-    });
-
     // add class when map is loaded
     google.maps.event.addListenerOnce(map, 'idle', function() {
       $('.acf-map').addClass('loaded');

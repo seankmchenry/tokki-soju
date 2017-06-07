@@ -14,7 +14,6 @@ Header
   z-index: 100;
 
   a {
-    font-weight: $bold-font-weight;
     @include link-color(black, $link-color);
   }
 }
@@ -43,7 +42,7 @@ Header
 
 /* Logo */
 .site-logo {
-  width: 85px;
+  width: 75px;
 
   @include break-sm {
     width: 100px;
@@ -63,15 +62,14 @@ Nav: Main
     margin: 0;
   }
   li {
-    display: inline-block;
-
     &.active a {
       color: $link-color;
-    }
+    }       
   }
   a {
     padding: 0.25rem;
     font-size: $btn-font-size;
+    text-transform: uppercase;
   }
 
   &.toggled .nav-menu {
@@ -80,16 +78,56 @@ Nav: Main
 
   @include break-sm {
     li {
-      margin: 0.25rem 0;
+      display: inline-block;
+      margin: 0.25rem 0;   
     }
     a {
       padding: 0.625rem;
-      text-transform: uppercase;
+      font-weight: $bold-font-weight;
     }
   }
   @include break-md {
     a {
       font-size: 0.875rem;
     }
+  }
+}
+
+/*
+Mobile Nav
+ */
+.main-navigation {
+  &.toggled {
+    .menu-top-nav-container {
+      position: absolute;
+      top: 100%; left: 0;
+      padding: 2rem 1.25rem;
+      width: 100%;
+      height: 100vh;
+      min-height: 100%;
+      text-align: center;
+      background-color: rgba(white, 0.95);
+      z-index: 99;
+
+      li {
+        display: block;
+        margin-bottom: 1rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      a {
+        font-family: $heading-font;
+        font-size: $h3;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  /* Toggle */
+  .menu-toggle {
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
   }
 }

@@ -59,7 +59,7 @@
         <div class="col-xs-4 col-sm-7 col-md-9">
           <!-- Nav -->
           <nav id="main-nav" class="main-navigation main-nav right-align" role="navigation">
-            <button class="menu-toggle btn btn-primary visible-xs" aria-controls="main-nav" aria-expanded="false"><?php esc_html_e( 'Menu', '_s' ); ?></button>
+            <button class="menu-toggle icon-menu btn btn-primary visible-xs" aria-controls="main-nav" aria-expanded="false"><span title="Menu"></span></button>
             <?php wp_nav_menu( array( 'theme_location' => 'main-nav', 'items_wrap' => '<ul id="main-nav-menu" class="nav-menu hidden-xs" data-gumshoe>%3$s</ul>' ) ); ?>
           </nav><!-- #main-nav -->
         </div>

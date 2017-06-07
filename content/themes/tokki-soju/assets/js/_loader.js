@@ -22,7 +22,11 @@ var Roots = {
       gumshoe.init();
 
       /* Smooth Scroll */
-      smoothScroll.init();
+      smoothScroll.init({
+        before: function(anchor, toggle) {
+          $('.main-nav.toggled').removeClass('toggled');
+        }
+      });
 
       /* Sticky.js */
       $('#masthead').sticky({
