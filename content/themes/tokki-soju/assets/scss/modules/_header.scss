@@ -18,6 +18,30 @@ Header
     @include link-color(black, $link-color);
   }
 }
+
+/* Sticky setup */
+#masthead-sticky-wrapper {
+  position: relative;
+  z-index: 100 !important;
+}
+#masthead {
+  width: 100%;
+  @include animate(margin);
+}
+.admin-bar {
+  .is-sticky #masthead {
+    margin-top: 46px;
+  }
+}
+@media only screen and (min-width: 783px) {
+  .admin-bar {
+    .is-sticky #masthead {
+      margin-top: 32px;
+    }
+  }
+}
+
+/* Logo */
 .site-logo {
   width: 85px;
 
@@ -40,6 +64,10 @@ Nav: Main
   }
   li {
     display: inline-block;
+
+    &.active a {
+      color: $link-color;
+    }
   }
   a {
     padding: 0.25rem;

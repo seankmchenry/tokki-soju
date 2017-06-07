@@ -5,20 +5,7 @@
 /*
 Home
  */
-.home {
-  .site-content:before {
-    display: block;
-    content: "";
-    height: 69px;
-
-    @include break-sm {
-      height: 80px;
-    }
-    @include break-md {
-      height: 94px;
-    }
-  }
-}
+.home {}
 
 /*
 Home: Global

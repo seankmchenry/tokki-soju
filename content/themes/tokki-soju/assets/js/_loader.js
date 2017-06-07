@@ -21,13 +21,13 @@ var Roots = {
       /* Gumshoe */
       gumshoe.init();
 
-      /* Headroom */
-      var myHeader = document.querySelector(".site-header");
-      var headroom = new Headroom(myHeader);
-      headroom.init();
-
       /* Smooth Scroll */
       smoothScroll.init();
+
+      /* Sticky.js */
+      $('#masthead').sticky({
+        topSpacing: 0
+      });
     }
   },
 
