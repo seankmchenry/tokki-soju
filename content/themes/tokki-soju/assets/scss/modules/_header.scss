@@ -72,7 +72,7 @@ Nav: Main
   li {
     &.active a {
       color: $link-color;
-    }       
+    }
   }
   a {
     padding: 0.25rem;
@@ -83,11 +83,14 @@ Nav: Main
   &.toggled .nav-menu {
     display: block !important;
   }
+  .sub-menu {
+    display: none;
+  }
 
   @include break-sm {
     li {
       display: inline-block;
-      margin: 0.25rem 0;   
+      margin: 0.25rem 0;
     }
     a {
       padding: 0.625rem;

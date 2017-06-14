@@ -28,7 +28,7 @@
               ?>
               <div class="col-xs-12 col-md-6">
                 <a href="<?php echo $photo['url']; ?>" target="_blank">
-                  <img class="section-photo about-photo about-section__photo block mb3 hover-lighten" src="<?php echo $photo['sizes']['tall']; ?>" alt="<?php echo $photo['alt']; ?>">
+                  <img class="section-photo about-photo about-section__photo block mb3" src="<?php echo $photo['sizes']['tall']; ?>" alt="<?php echo $photo['alt']; ?>">
                 </a>
               </div>
             <?php }

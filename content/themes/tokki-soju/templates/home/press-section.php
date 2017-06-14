@@ -37,10 +37,10 @@
                       <?php // check for link
                       if ( $link ) { ?>
                         <a href="<?php echo $link; ?>" target="_blank">
-                          <img class="press-logo press-item__logo block mx-auto hover-lighten" src="<?php echo $logo['sizes']['logo']; ?>" alt="<?php echo $logo['alt']; ?>">
+                          <img class="press-logo press-item__logo block mx-auto" src="<?php echo $logo['sizes']['logo']; ?>" alt="<?php echo $logo['alt']; ?>">
                         </a>
                       <?php } else { ?>
-                        <img class="press-logo press-item__logo block mx-auto hover-lighten" src="<?php echo $logo['sizes']['logo']; ?>" alt="<?php echo $logo['alt']; ?>">
+                        <img class="press-logo press-item__logo block mx-auto" src="<?php echo $logo['sizes']['logo']; ?>" alt="<?php echo $logo['alt']; ?>">
                       <?php } ?>
                     </div>
                   </div>

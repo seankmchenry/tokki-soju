@@ -41,40 +41,43 @@
                 <?php // loop through posts
                 while ( $my_query->have_posts() ) : $my_query->the_post();
 
-                  // set location type var
-                  $type = get_field( 'location_type' );
-                  // set location var
+                  // set field variables
                   $location = get_field( 'location_address' );
-                  // set address var
-                  $address = $location['address'];
-                  $address = ts_get_map_address( $address );
-                  // set price var
                   $price = get_field( 'location_price' );
+                  $link = get_field( 'website_url' );
+                  $phone = get_field( 'phone_number' );
                   ?>
 
                   <div class="marker marker-item" data-lat="<?php echo $location['lat']; ?>" data-lng="<?php echo $location['lng']; ?>">
                     <!-- Title -->
                     <h4 class="location-name marker-item__name fw500 m0"><?php the_title(); ?></h4>
 
-                    <!-- Price -->
-                    <span class="price mb1"><?php echo $price; ?></span>
+                    <?php
+                    /* Price */
+                    if ( $price ) { ?>
+                      <span class="price mb1"><?php echo $price; ?></span>
+                    <?php }
 
-                    <!-- Address -->
-                    <span><?php echo $address[0]; ?></span>
-                    <span><?php echo $address[1]; ?></span>
+                    /* Address */
+                    if ( $location ) {
+                      // set up address field
+                      $address = $location['address'];
+                      $address = ts_get_map_address( $address );
+                      ?>
+                      <span><?php echo $address[0]; ?></span>
+                      <span><?php echo $address[1]; ?></span>
+                    <?php }
 
-                    <?php // check location type
-                    if ( $type == 'restaurant' ) {
-                      $link = get_field( 'website_url' ); ?>
-
-                      <!-- Website -->
+                    /* Website */
+                    if ( $link ) { ?>
                       <span><a href="<?php echo $link; ?>" target="_blank">Website</a></span>
-                    <?php } elseif ( $type == 'store' ) {
-                      $phone = get_field( 'phone_number' ); ?>
+                    <?php }
 
-                      <!-- Phone number -->
+                    /* Phone */
+                    if ( $phone ) { ?>
                       <span><a href="<?php echo ts_get_tel_link( $phone ); ?>"><?php echo $phone; ?></a></span>
-                    <?php } ?>
+                    <?php }
+                    ?>
                   </div>
 
                 <?php endwhile; ?>

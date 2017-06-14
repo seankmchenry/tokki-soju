@@ -83,8 +83,12 @@ Headlines
 /*
 Hover Effects
  */
-@mixin hover-lighten($opacity: 0.85) {
+@mixin hover-fix {
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+@mixin hover-lighten($opacity: 0.85) {
+  @include hover-fix;
   @include animate(opacity);
 
   &:hover,

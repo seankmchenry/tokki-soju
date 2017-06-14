@@ -94,7 +94,7 @@
       // close open infowindows when clicking map
       google.maps.event.addListener(map, 'click', function() {
         infowindow.close();
-      });      
+      });
     }
   }
 

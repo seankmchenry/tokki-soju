@@ -40,7 +40,7 @@
                       /* Photo */
                       if ( has_post_thumbnail() ) { ?>
                         <a href="<?php the_permalink(); ?>">
-                          <img class="recipe-thumb recipe-item__thumb block hover-lighten" src="<?php echo get_the_post_thumbnail_url( $post, 'medium' ); ?>" alt="">
+                          <img class="recipe-thumb recipe-item__thumb block" src="<?php echo get_the_post_thumbnail_url( $post, 'medium' ); ?>" alt="">
                         </a>
                       <?php }
                       ?>

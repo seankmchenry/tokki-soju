@@ -656,45 +656,13 @@ acf_add_local_field_group(array (
       'height' => 275,
     ),
     array (
-      'key' => 'field_592866af79411',
-      'label' => 'Location Type',
-      'name' => 'location_type',
-      'type' => 'radio',
-      'instructions' => 'Select the type of location this is.',
-      'required' => 1,
-      'conditional_logic' => 0,
-      'wrapper' => array (
-        'width' => '',
-        'class' => '',
-        'id' => '',
-      ),
-      'choices' => array (
-        'restaurant' => 'Restaurant',
-        'store' => 'Store',
-      ),
-      'allow_null' => 0,
-      'other_choice' => 0,
-      'save_other_choice' => 0,
-      'default_value' => '',
-      'layout' => 'vertical',
-      'return_format' => 'value',
-    ),
-    array (
       'key' => 'field_592867514bad4',
       'label' => 'Website URL',
       'name' => 'website_url',
       'type' => 'url',
       'instructions' => 'Enter the location\'s website URL.',
       'required' => 0,
-      'conditional_logic' => array (
-        array (
-          array (
-            'field' => 'field_592866af79411',
-            'operator' => '==',
-            'value' => 'restaurant',
-          ),
-        ),
-      ),
+      'conditional_logic' => 0,
       'wrapper' => array (
         'width' => '',
         'class' => '',
@@ -710,15 +678,7 @@ acf_add_local_field_group(array (
       'type' => 'text',
       'instructions' => 'Enter the location\'s phone number.',
       'required' => 0,
-      'conditional_logic' => array (
-        array (
-          array (
-            'field' => 'field_592866af79411',
-            'operator' => '==',
-            'value' => 'store',
-          ),
-        ),
-      ),
+      'conditional_logic' => 0,
       'wrapper' => array (
         'width' => '',
         'class' => '',

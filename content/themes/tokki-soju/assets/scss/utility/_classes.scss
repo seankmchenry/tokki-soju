@@ -68,6 +68,9 @@ Mixins
 .darken-bg {
   @include bg-darken;
 }
+.hover-fix {
+  @include hover-fix;
+}
 .hover-lighten {
   @include hover-lighten;
 }

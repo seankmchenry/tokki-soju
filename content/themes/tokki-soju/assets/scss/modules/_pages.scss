@@ -14,8 +14,21 @@ Home: Global
   padding: 2rem 0;
 
   .section-title {
-    font-size: $h3;
+    font-size: $h1;
     text-transform: uppercase;
+    @include fancy-headline;
+  }
+
+  img {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    transition: -webkit-filter 0.25s, -moz-filter 0.25s;
+    @include hover-fix;
+
+    &:hover {
+      -webkit-filter: grayscale(0%);
+      -moz-filter: grayscale(0%);
+    }
   }
 
   @include break-sm {
