@@ -47,7 +47,7 @@ Home: Map
  */
 .map-section__map {
   width: 100%;
-  height: 350px;
+  height: 300px;
   border: 1px solid $border-color;
   overflow: hidden;
 
@@ -69,13 +69,13 @@ Home: Map
   }
 
   @include break-sm {
-    height: 400px;
+    height: 350px;
   }
   @include break-md {
-    height: 450px;
+    height: 400px;
   }
   @include break-lg {
-    height: 500px;
+    height: 450px;
   }
 
   // display when map is loaded
@@ -111,8 +111,4 @@ Home: About
   @include break-lg {
     margin: 0 auto;
   }
-}
-.about-section__headline {
-  font-size: $xl-font-size;
-  @include fancy-headline;
 }

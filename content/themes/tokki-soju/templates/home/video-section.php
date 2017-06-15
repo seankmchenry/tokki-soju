@@ -10,7 +10,7 @@
 
   <div class="container">
     <div class="row center-xs">
-      <div class="col-xs-12 col-md-10">
+      <div class="col-xs-12">
 
         <!-- Inner -->
         <div class="section-inner video-inner video-section__inner">

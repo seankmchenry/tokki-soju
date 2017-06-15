@@ -19,3 +19,201 @@ Embed Responsively
     height: 100%;
   }
 }
+
+/*
+VenoBox
+ */
+.vbox-overlay *, .vbox-overlay *:before, .vbox-overlay *:after {
+  box-sizing: border-box;
+}
+.vbox-overlay {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1040;
+  transform: translateZ(1000px);
+  transform-style: preserve-3d;
+}
+
+.vbox-title {
+  width: 100%;
+  height: 40px;
+  float: left;
+  text-align: center;
+  line-height: 28px;
+  font-size: 12px;
+  padding: 6px 40px;
+  overflow: hidden;
+  position: fixed;
+  display: none;
+  left: 0;
+  z-index: 1050;
+}
+.vbox-close {
+  cursor: pointer;
+  position: fixed;
+  top: -1px;
+  right: 0;
+  width: 50px;
+  height: 40px;
+  padding: 6px;
+  display: block;
+  background-position: 10px center;
+  overflow: hidden;
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  z-index: 1050;
+}
+.vbox-num {
+  cursor: pointer;
+  position: fixed;
+  left: 0;
+  height: 40px;
+  display: block;
+  overflow: hidden;
+  line-height: 28px;
+  font-size: 12px;
+  padding: 6px 10px;
+  display: none;
+  z-index: 1050;
+}
+.vbox-next, .vbox-prev {
+  position: fixed;
+  top: 50%;
+  margin-top: -15px;
+  overflow: hidden;
+  cursor: pointer;
+  display: block;
+  width: 45px;
+  height: 45px;
+  z-index: 1050;
+}
+.vbox-next span, .vbox-prev span {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-top-color: #B6B6B6;
+  border-right-color: #B6B6B6;
+  text-indent: -100px;
+  position: absolute;
+  top: 8px;
+  display: block;
+}
+.vbox-prev {
+  left: 15px;
+}
+.vbox-next {
+  right: 15px;
+}
+.vbox-prev span {
+  left: 10px;
+  transform: rotate(-135deg);
+}
+.vbox-next span {
+  transform: rotate(45deg);
+  right: 10px;
+}
+.vbox-inline {
+  width: 420px;
+  height: 315px;
+  height: 70vh;
+  padding: 10px;
+  background: #fff;
+  margin: 0 auto;
+  overflow: auto;
+  text-align: left;
+}
+.venoframe {
+  max-width: 100%;
+  width: 100%;
+  border: none;
+  width: 100%;
+  height: 260px;
+  height: 70vh;
+}
+.venoframe.vbvid {
+  height: 260px;
+}
+@media (min-width: 768px) {
+  .venoframe, .vbox-inline {
+    width: 90%;
+    height: 360px;
+    height: 70vh;
+  }
+  .venoframe.vbvid {
+    width: 640px;
+    height: 360px;
+  }
+}
+@media (min-width: 992px) {
+  .venoframe, .vbox-inline {
+    max-width: 1200px;
+    width: 80%;
+    height: 540px;
+    height: 70vh;
+  }
+  .venoframe.vbvid {
+    width: 960px;
+    height: 540px;
+  }
+}
+
+.vbox-open {
+  overflow: hidden;
+}
+.vbox-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  overflow-scrolling: touch;
+  z-index: 20;
+  max-height: 100%;
+}
+.vbox-content {
+  text-align: center;
+  float: left;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 10px;
+}
+.vbox-container img {
+  max-width: 100%;
+  height: auto;
+}
+.figlio {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  max-width: 100%;
+  text-align: initial;
+}
+img.figlio {
+  user-select: none;
+}
+.vbox-content.swipe-left {
+  margin-left: -200px !important;
+}
+.vbox-content.swipe-right {
+  margin-left: 200px !important;
+}
+.animated {
+  transition: margin 300ms ease-out;
+}
+.animate-in {
+  opacity: 1;
+}
+.animate-out {
+  opacity: 0;
+}

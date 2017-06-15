@@ -436,7 +436,7 @@ acf_add_local_field_group(array (
               'name' => 'section_headline',
               'type' => 'text',
               'instructions' => 'Enter a headline to appear above the section text.',
-              'required' => 1,
+              'required' => 0,
               'conditional_logic' => 0,
               'wrapper' => array (
                 'width' => '',

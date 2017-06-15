@@ -25,9 +25,7 @@
           if ( get_sub_field( 'section_image' ) ) {
             $image = get_sub_field( 'section_image' ); ?>
 
-            <a href="<?php echo $image['url']; ?>" target="_blank">
-              <img class="section-image lgimg-image lgimg-section__image block mx-auto" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
-            </a>
+            <img class="section-image lgimg-image lgimg-section__image block mx-auto" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
           <?php }
           ?>
 

@@ -27,18 +27,17 @@
               $photo = get_sub_field( 'section_photo' );
               ?>
               <div class="col-xs-12 col-md-6">
-                <a href="<?php echo $photo['url']; ?>" target="_blank">
-                  <img class="section-photo about-photo about-section__photo block mb3" src="<?php echo $photo['sizes']['tall']; ?>" alt="<?php echo $photo['alt']; ?>">
-                </a>
+                <img class="section-photo about-photo about-section__photo block mb3" src="<?php echo $photo['sizes']['tall']; ?>" alt="<?php echo $photo['alt']; ?>">
               </div>
             <?php }
 
-            if ( get_sub_field( 'section_headline' ) && get_sub_field( 'section_headline' ) ) { ?>
+            // check for section headline and text
+            if ( get_sub_field( 'section_headline' ) && get_sub_field( 'section_text' ) ) { ?>
               <div class="col-xs-12 col-md-6 left-align">
                 <?php
                 /* Section Headline */
                 if ( get_sub_field( 'section_headline' ) ) { ?>
-                  <h3 class="section-headline about-headline about-section__headline mt0 mb3"><?php the_sub_field( 'section_headline' ); ?></h3>
+                  <h3 class="section-headline about-headline about-section__headline h2 mt0 mbp"><?php the_sub_field( 'section_headline' ); ?></h3>
                 <?php }
 
                 /* Section Text */
