@@ -48,19 +48,6 @@ function _ts_remove_dash_widgets() {
 add_action( 'wp_dashboard_setup', '_ts_remove_dash_widgets' );
 
 /*
-Custom welcome panel
- */
-function _ts_custom_welcome_panel() {
-  $html =  '<div class="welcome-panel-content" style="padding-bottom: 23px;">';
-  $html .= '<h2 style="margin-bottom: 5px;">Welcome to your site!</h2>';
-  $html .= '<p style="font-size: 16px; margin: 0;">Click anywhere on the left-hand side to get started. Just for reference, your IP address is <code>' . $_SERVER['SERVER_ADDR'] . '</code>. Good luck!</p>';
-  $html .= '</div>';
-  echo $html;
-}
-remove_action( 'welcome_panel', 'wp_welcome_panel' );
-add_action( 'welcome_panel', '_ts_custom_welcome_panel' );
-
-/*
 Add ACF options page
  */
 if ( function_exists( 'acf_add_options_page' ) ) {
@@ -93,11 +80,12 @@ add_action( 'init', '_ts_custom_image_sizes' );
 /**
  * Allow SVG upload through media library
  */
-function ts_allow_svg_upload( $mimes = array() ) {
-  $mimes['svg'] = 'mime/type';
+function ts_allow_svg_upload( $mimes ) {
+  $mimes['svg'] = 'image/svg+xml';
+  $mimes['svgz'] = 'image/svg+xml';
   return $mimes;
 }
-add_filter( 'upload_mimes', 'ts_allow_svg_upload' );
+add_filter( 'upload_mimes', 'ts_allow_svg_upload', 10, 1 );
 
 /**
  * Get post thumbnail image alt text

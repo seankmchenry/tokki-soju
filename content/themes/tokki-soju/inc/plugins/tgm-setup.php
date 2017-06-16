@@ -54,8 +54,8 @@ function ts_register_required_plugins() {
    */
   $plugins_remote = array(
     array(
-      'name' => 'Login Security Solution',
-      'slug' => 'login-security-solution',
+      'name' => 'Loginizer',
+      'slug' => 'loginizer',
       'required' => true,
       'force_activation' => true
     ),

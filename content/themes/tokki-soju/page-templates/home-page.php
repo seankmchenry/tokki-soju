@@ -27,19 +27,24 @@ get_header(); ?>
                 // loop through sections
                 while ( have_rows( 'home_sections' ) ) : the_row();
 
-                  /* Map */
-                  if ( get_row_layout() == 'map_section' ) {
-                    get_template_part( 'templates/home/map', 'section' );
-                  }
-
                   /* Large Image */
-                  elseif ( get_row_layout() == 'large_image_section' ) {
+                  if ( get_row_layout() == 'large_image_section' ) {
                     get_template_part( 'templates/home/large_image', 'section' );
                   }
 
-                  /* Recipe */
-                  elseif ( get_row_layout() == 'recipe_section' ) {
-                    get_template_part( 'templates/home/recipe', 'section' );
+                  /* Map */
+                  elseif ( get_row_layout() == 'map_section' ) {
+                    get_template_part( 'templates/home/map', 'section' );
+                  }
+
+                  /* Video */
+                  elseif ( get_row_layout() == 'video_section' ) {
+                    get_template_part( 'templates/home/video', 'section' );
+                  }
+
+                  /* FAQs */
+                  elseif ( get_row_layout() == 'faqs_section' ) {
+                    get_template_part( 'templates/home/faqs', 'section' );
                   }
 
                   /* Press */
@@ -52,14 +57,14 @@ get_header(); ?>
                     get_template_part( 'templates/home/about', 'section' );
                   }
 
+                  /* Recipe */
+                  elseif ( get_row_layout() == 'recipe_section' ) {
+                    get_template_part( 'templates/home/recipe', 'section' );
+                  }
+
                   /* Gallery */
                   elseif ( get_row_layout() == 'gallery_section' ) {
                     get_template_part( 'templates/home/gallery', 'section' );
-                  }
-
-                  /* Video */
-                  elseif ( get_row_layout() == 'video_section' ) {
-                    get_template_part( 'templates/home/video', 'section' );
                   }
 
                 endwhile;
