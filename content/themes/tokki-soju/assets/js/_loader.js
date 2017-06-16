@@ -22,7 +22,23 @@ var Roots = {
       gumshoe.init();
 
       /* Smooth Scroll */
+      // set window width to var
+      var width = $(window).width();
+
+      // set offset depending on width
+      if (width >= 768) {
+        sOffset = 75;
+      } else if (width >= 992) {
+        sOffset = 88;
+      } else if (width >= 1200) {
+        sOffset = 96;
+      } else {
+        sOffset = 56;
+      }
+
+      // init the plugin
       smoothScroll.init({
+        offset: sOffset,
         before: function(anchor, toggle) {
           $('.main-nav.toggled').removeClass('toggled');
         }
