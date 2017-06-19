@@ -32,7 +32,7 @@
                   /* Question */
                   if ( get_sub_field( 'question' ) ) { ?>
                     <div class="question-text faqs-item__question mb1">
-                      <strong>Q:</strong> <?php the_sub_field( 'question' ); ?>
+                      <strong>Q: <?php the_sub_field( 'question' ); ?></strong>
                     </div>
                   <?php }
 
