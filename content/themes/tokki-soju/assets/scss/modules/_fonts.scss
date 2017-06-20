@@ -2,7 +2,7 @@
  * _fonts.scss
  */
 
-$font-ver: "4430604";
+$font-ver: "16327204";
 @font-face {
   font-family: 'fontello';
   src: url('../fonts/fontello.eot?#{$font-ver}');
@@ -59,9 +59,9 @@ $font-ver: "4430604";
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 .icon-menu:before { content: '\e800'; } /* '' */
-.icon-linkedin-squared:before { content: '\e801'; } /* '' */
-.icon-twitter:before { content: '\f099'; } /* '' */
-.icon-facebook-1:before { content: '\f09a'; } /* '' */
-.icon-linkedin:before { content: '\f0e1'; } /* '' */
-.icon-twitter-squared:before { content: '\f304'; } /* '' */
-.icon-facebook-squared-1:before { content: '\f308'; } /* '' */
+.icon-facebook-circled:before { content: '\f051'; } /* '' */
+.icon-facebook:before { content: '\f052'; } /* '' */
+.icon-twitter-circled:before { content: '\f057'; } /* '' */
+.icon-twitter:before { content: '\f058'; } /* '' */
+.icon-instagram:before { content: '\f05d'; } /* '' */
+.icon-instagram-circled:before { content: '\f05e'; } /* '' */

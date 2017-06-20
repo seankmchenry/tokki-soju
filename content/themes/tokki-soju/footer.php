@@ -27,7 +27,7 @@ $ig_url = get_field( 'instagram_url', 'option' );
               <!-- Credits -->
               <div class="col-xs-12 col-sm-4 first-sm mb1 sm-mb0">
                 <div class="footer-credits site-footer__credits">
-                  <span>Website by <a href="http://seanmchenry.com" target="">SMK</a></span>
+                  <span>Website by <a href="http://seanmchenry.com" target="_blank">SMK</a></span>
                 </div>
               </div>
 
@@ -40,17 +40,17 @@ $ig_url = get_field( 'instagram_url', 'option' );
                       <?php
                       /* Facebook */
                       if ( $fb_url ) { ?>
-                        <li class="inline-block"><a class="icon-facebook-squared-1 facebook" href="<?php echo $fb_url; ?>" target="_blank"></a></li>
+                        <li class="inline-block"><a class="icon-facebook-circled facebook" href="<?php echo $fb_url; ?>" target="_blank"></a></li>
+                      <?php }
+
+                      /* Instagram */
+                      if ( $ig_url ) { ?>
+                        <li class="inline-block"><a class="icon-instagram-circled instagram" href="<?php echo $ig_url; ?>" target="_blank"></a></li>
                       <?php }
 
                       /* Twitter */
                       if ( $tw_url ) { ?>
-                        <li class="inline-block"><a class="icon-twitter-squared twitter" href="<?php echo $tw_url; ?>" target="_blank"></a></li>
-                      <?php }
-
-                      /* LinkedIn */
-                      if ( $fb_url ) { ?>
-                        <li class="inline-block"><a class="icon-linkedin-squared linkedin" href="<?php echo $li_url; ?>" target="_blank"></a></li>
+                        <li class="inline-block"><a class="icon-twitter-circled twitter" href="<?php echo $tw_url; ?>" target="_blank"></a></li>
                       <?php }
                       ?>
                     </ul>

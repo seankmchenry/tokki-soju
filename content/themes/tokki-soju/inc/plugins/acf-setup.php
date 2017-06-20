@@ -919,11 +919,11 @@ acf_add_local_field_group(array (
       'maxlength' => '',
     ),
     array (
-      'key' => 'field_594409fc2ebc2',
-      'label' => 'Twitter URL',
-      'name' => 'twitter_url',
+      'key' => 'field_59440a072ebc3',
+      'label' => 'Instagram URL',
+      'name' => 'instagram_url',
       'type' => 'text',
-      'instructions' => 'Enter the business\'s Twitter page URL.',
+      'instructions' => 'Enter the business\'s Instagram page URL.',
       'required' => 0,
       'conditional_logic' => 0,
       'wrapper' => array (
@@ -938,11 +938,11 @@ acf_add_local_field_group(array (
       'maxlength' => '',
     ),
     array (
-      'key' => 'field_59440a072ebc3',
-      'label' => 'Instagram URL',
-      'name' => 'instagram_url',
+      'key' => 'field_594409fc2ebc2',
+      'label' => 'Twitter URL',
+      'name' => 'twitter_url',
       'type' => 'text',
-      'instructions' => 'Enter the business\'s Instagram page URL.',
+      'instructions' => 'Enter the business\'s Twitter page URL.',
       'required' => 0,
       'conditional_logic' => 0,
       'wrapper' => array (
