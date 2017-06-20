@@ -4,7 +4,7 @@
  */
 
 // return if this is dev environment
-if ( WP_ENV !== 'development' ) {
+if ( WP_ENV === 'development' ) {
   return;
 }
 

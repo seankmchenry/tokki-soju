@@ -17,7 +17,7 @@
 
           <?php
           /* Title */
-          if ( get_sub_field( 'section_title' ) && get_sub_field( 'show_title' ) ) { ?>
+          if ( get_sub_field( 'section_title' ) ) { ?>
             <h2 class="section-title recipe-title recipe-section__title mt0 mb3 center"><?php the_sub_field( 'section_title' ); ?></h2>
           <?php }
 

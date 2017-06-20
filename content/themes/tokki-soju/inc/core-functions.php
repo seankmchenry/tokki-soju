@@ -111,8 +111,12 @@ add_filter( 'acf/fields/google_map/api', 'ts_google_maps_key' );
  * Section title ID
  */
 function ts_get_section_id() {
-  $title = get_sub_field( 'section_title' );
-  $id = strtolower( str_replace( ' ', '-', $title ) );
+  // check for section ID field
+  if ( get_sub_field( 'section_id' ) ) {
+    $id = get_sub_field( 'section_id' );
+  } else {
+    $id = 'section-no-id';
+  }
   return $id;
 }
 
@@ -148,3 +152,20 @@ function ts_add_link_class( $ulclass ) {
   return preg_replace( '/<a /', '<a data-scroll ', $ulclass );
 }
 add_filter( 'wp_nav_menu', 'ts_add_link_class' );
+
+/**
+ * Validate section ID field
+ */
+function ts_validate_section_id( $valid, $value, $field, $input ) {
+  // bail if valid
+  if ( $valid ) {
+    return $valid;
+  }
+  // check field info
+  if ( !preg_match( '/^[A-Za-z\\-]$/', $value ) ) {
+    $valid = 'Section ID must only contain letters or hyphens.';
+  }
+  // return valid value
+  return $valid;
+}
+add_filter( 'acf/validate_value/name=section_id', 'ts_validate_section_id', 10, 4 );
