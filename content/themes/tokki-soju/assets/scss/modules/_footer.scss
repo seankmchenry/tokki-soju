@@ -13,6 +13,47 @@ Footer
     color: $footer-text-color;
     border-bottom: 1px dotted $footer-text-color;
   }
+
+  @include break-md {
+    font-size: $btn-font-size;
+  }
+}
+
+/*
+Footer: Inner
+ */
+.site-footer__inner {
+  padding: 1rem 0;
+}
+
+/*
+Footer: Social
+ */
+.site-footer__social {
+  font-size: 0;
+
+  li {
+    margin: 0 0.25rem;
+  }
+  a {
+    font-size: 1.75rem;
+    line-height: 1.0;
+    border-bottom: none;
+
+    &:before {
+      margin: 0;
+    }
+
+    &.facebook:hover {
+      color: $facebook;
+    }
+    &.instagram:hover {
+      color: $instagram;
+    }
+    &.twitter:hover {
+      color: $twitter;
+    }
+  }
 }
 
 /*

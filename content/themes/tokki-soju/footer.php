@@ -17,7 +17,7 @@ $ig_url = get_field( 'instagram_url', 'option' );
 
   <footer id="colophon" class="site-footer" role="contentinfo">
     <!-- Inner -->
-    <div class="footer-inner site-footer__inner py2 overflow-hidden">
+    <div class="footer-inner site-footer__inner overflow-hidden">
 
       <div class="container">
         <div class="row center-xs">
@@ -25,14 +25,14 @@ $ig_url = get_field( 'instagram_url', 'option' );
 
             <div class="row middle-xs">
               <!-- Credits -->
-              <div class="col-xs-12 col-sm-4 mb1 sm-mb0">
+              <div class="col-xs-12 col-sm-4 first-sm mb1 sm-mb0">
                 <div class="footer-credits site-footer__credits">
                   <span>Website by <a href="http://seanmchenry.com" target="">SMK</a></span>
                 </div>
               </div>
 
               <!-- Social icons -->
-              <div class="col-xs-12 col-sm-4 mb1 sm-mb0">
+              <div class="col-xs-12 col-sm-4 first-xs mb1 sm-mb0">
                 <div class="footer-social site-footer__social">
                   <?php // check for social icons
                   if ( $fb_url || $tw_url || $ig_url ) { ?>
