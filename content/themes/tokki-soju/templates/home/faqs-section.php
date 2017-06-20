@@ -10,7 +10,7 @@
 
   <div class="container">
     <div class="row center-xs">
-      <div class="col-xs-12 col-sm-10 col-md-9 col-lg-8">
+      <div class="col-xs-12 col-md-9 col-lg-8">
 
         <!-- Inner -->
         <div class="section-inner faqs-inner faqs-section__inner left-align">

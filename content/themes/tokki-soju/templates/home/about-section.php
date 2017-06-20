@@ -10,7 +10,7 @@
 
   <div class="container">
     <div class="row center-xs">
-      <div class="col-xs-12 col-lg-10">
+      <div class="col-xs-12">
 
         <!-- Inner -->
         <div class="section-inner about-inner about-section__inner">
@@ -26,14 +26,14 @@
             if ( get_sub_field( 'section_photo' ) ) {
               $photo = get_sub_field( 'section_photo' );
               ?>
-              <div class="col-xs-12 col-md-6">
+              <div class="col-xs-12 col-md-6 col-lg-5">
                 <img class="section-photo about-photo about-section__photo block mb3" src="<?php echo $photo['sizes']['tall']; ?>" alt="<?php echo $photo['alt']; ?>">
               </div>
             <?php }
 
             // check for section headline and text
             if ( get_sub_field( 'section_headline' ) && get_sub_field( 'section_text' ) ) { ?>
-              <div class="col-xs-12 col-md-6 left-align">
+              <div class="col-xs-12 col-md-6 col-lg-7 left-align">
                 <?php
                 /* Section Headline */
                 if ( get_sub_field( 'section_headline' ) ) { ?>

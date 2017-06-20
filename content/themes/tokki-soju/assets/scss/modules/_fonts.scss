@@ -2,7 +2,7 @@
  * _fonts.scss
  */
 
-$font-ver: "69429007";
+$font-ver: "4430604";
 @font-face {
   font-family: 'fontello';
   src: url('../fonts/fontello.eot?#{$font-ver}');
@@ -58,8 +58,10 @@ $font-ver: "69429007";
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
-.icon-menu:before { content: '\e800'; }
-.icon-twitter-1:before { content: '\f309'; }
-.icon-twitter-circled:before { content: '\f30a'; }
-.icon-facebook:before { content: '\f30c'; }
-.icon-facebook-squared:before { content: '\f30e'; }
+.icon-menu:before { content: '\e800'; } /* '' */
+.icon-linkedin-squared:before { content: '\e801'; } /* '' */
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-facebook-1:before { content: '\f09a'; } /* '' */
+.icon-linkedin:before { content: '\f0e1'; } /* '' */
+.icon-twitter-squared:before { content: '\f304'; } /* '' */
+.icon-facebook-squared-1:before { content: '\f308'; } /* '' */

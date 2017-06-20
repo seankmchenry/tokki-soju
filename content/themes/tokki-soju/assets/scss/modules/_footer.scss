@@ -7,7 +7,6 @@ Footer
  */
 .site-footer {
   color: $footer-text-color;
-  font-size: $btn-font-size;
   background-color: $footer-bg-color;
 
   a {
@@ -15,16 +14,6 @@ Footer
     border-bottom: 1px dotted $footer-text-color;
   }
 }
-
-/*
-Footer: Top
- */
-.site-footer__top {}
-
-/*
-Footer: Bottom
- */
-.site-footer__bottom {}
 
 /*
 Sticky Footer
