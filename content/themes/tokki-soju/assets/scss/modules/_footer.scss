@@ -24,6 +24,15 @@ Footer: Inner
  */
 .site-footer__inner {
   padding: 1rem 0;
+
+  @include break-sm {
+    .footer-credits {
+      text-align: left;
+    }
+    .footer-copyright {
+      text-align: right;
+    }
+  }
 }
 
 /*
