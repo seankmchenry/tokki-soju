@@ -85,9 +85,6 @@
 
       // show info window when marker is clicked
       google.maps.event.addListener(marker, 'click', function() {
-        if (infowindow) {
-          infowindow.close();
-        }
         infowindow.open(map, marker);
       });
 
