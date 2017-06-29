@@ -31,4 +31,4 @@ add_theme_support( 'soil-nice-search' );
 /*
 Google Analytics
  */
-// add_theme_support( 'soil-google-analytics', 'UA-XXXXX-Y' );
+add_theme_support( 'soil-google-analytics', 'UA-101647521-1' );
