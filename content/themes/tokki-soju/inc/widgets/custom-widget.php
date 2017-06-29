@@ -29,7 +29,7 @@ class Custom_Widget extends WP_Widget {
       <?php
       /* Title */
       if ( get_field( 'widget_title', $wid ) ) { ?>
-        <h2 class="widget-title custom-widget__title h4 mt0">
+        <h2 class="widget-title custom-widget__title h3 mt0">
           <?php the_field( 'widget_title', $wid ); ?>
         </h2>
       <?php }

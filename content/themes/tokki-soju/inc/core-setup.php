@@ -93,7 +93,7 @@ function ts_widgets_init() {
     'description'   => esc_html__( 'Add widgets here.', '_s' ),
     'before_widget' => '<section id="%1$s" class="widget %2$s">',
     'after_widget'  => '</section>',
-    'before_title'  => '<h2 class="widget-title mt0">',
+    'before_title'  => '<h2 class="widget-title h3 mt0">',
     'after_title'   => '</h2>',
   ) );
 }
